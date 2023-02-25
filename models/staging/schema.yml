@@ -3,11 +3,7 @@ version: 2
 
 sources:
     - name: staging
-      #For bigquery:
-      #database: taxi-rides-ny-339813
-
-      # For postgres:
-      database: production
+      database: data-eng-bootcamp-375614
 
       schema: trips_data_all
 
@@ -15,6 +11,7 @@ sources:
       tables:
         - name: green_tripdata
         - name: yellow_tripdata
+        - name: fhv_taxi_data_2019
          # freshness:
            # error_after: {count: 6, period: hour}
 
